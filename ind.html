@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="inp">
+    <button onclick="result()">Result</button>
+    <div id="dis"></div>
+    <!-- <script>
+        function result(){
+            let a = document.getElementById("inp").value;
+
+            for(let i = 0;i<=a;i++){
+                for(let j=0;j<=i;j++){
+                    document.getElementById("dis").innerHTML += "*"
+                }
+                document.getElementById("dis").innerHTML += `<br>`
+            }
+        }
+    </script> -->
+
+    <!-- <script>
+        function result() {
+            let a = +(document.getElementById("inp").value);
+            for (let i = 0; i <= a; i++) {
+                for (let j = 0; j <= i; j++) {
+                    if ((j % 2) == 1) {
+                        document.getElementById("dis").innerHTML += j;
+                    }
+                }
+                document.getElementById("dis").innerHTML += `<br>`
+
+            }
+        }
+    </script> -->
+
+    <script>
+        function result() {
+            let a = +(document.getElementById("inp").value);
+            for (let i = 0; i <= a; i++) {
+                for (let j = 0; j <= a - i; j++) {
+                    document.getElementById("dis").innerHTML += "*";
+                } document.getElementById("dis").innerHTML += `<br>`
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>
